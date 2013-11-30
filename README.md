@@ -2,13 +2,13 @@
 
 A browserify transform for handlebar templates! Yay!
 
-## How do I use it?
-
-Install:
+###Installation:
 
 `npm install browserify-handlebars`
 
-template.handlebars:
+###Usage:
+
+Make a handlebars template like so:
 
 ```html
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ template.handlebars:
 </html>
 ```
 
-Now do something like this:
+Now `require()` the handlebar template file in code like so:
 
 ```javascript
 var aTemplateFunction = require('./template.handlebars');
@@ -30,5 +30,11 @@ var aTemplateFunction = require('./template.handlebars');
 var html = aTemplateFunction({title: "An instantiated template!", name: "David"});
 ```
 
+and run browserify with the transform option:
+
+`browserify -t browserify-handlebars entry-point.js`
+
 That's all!
+
+
 
