@@ -1,0 +1,28 @@
+{
+  "name": "browserify-handlebars",
+  "version": "0.0.1",
+  "description": "browserify transform for handlebars template files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dlmanning/browserify-handlebars.git"
+  },
+  "keywords": [
+    "browserify",
+    "handlebars",
+    "transform"
+  ],
+  "author": "David Manning",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/dlmanning/browserify-handlebars/issues"
+  },
+  "homepage": "https://github.com/dlmanning/browserify-handlebars",
+  "dependencies": {
+    "handlebars": "~1.1.2",
+    "through": "~2.3.4"
+  }
+}
