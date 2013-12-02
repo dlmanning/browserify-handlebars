@@ -1,5 +1,6 @@
-var testTemplate = require('./templates/test.handlebars');
-var testTemplate2 = require('./templates/test2.handlebars');
+var exec = require('child_process').exec;
 
-console.log(testTemplate({title: "Hello World", name: "David"}));
-console.log(testTemplate2({name: "Tully"}));
+var child = exec('browserify -t ../index browserify-me.js | node', 
+  function (err, stdout, stdin) {
+    console.log(stdout);
+});

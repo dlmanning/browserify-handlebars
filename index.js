@@ -5,7 +5,8 @@ var through = require('through');
 
 var filenamePattern = /\.(html|handlebars|hbs)$/;
 
-var runtimePath = path.resolve(module.id, '../lib/handlebars.runtime');
+var runtimePath = path.resolve(require.resolve('handlebars')
+                              ,'../../dist/cjs/handlebars.runtime');
 
 var wrap = function (template) {
   return 'var templater = require("' + runtimePath + '").default.template;' +

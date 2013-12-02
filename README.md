@@ -36,5 +36,9 @@ and run browserify with the transform option:
 
 That's all!
 
+## Implementation details
+
+This transform module packages the handlebars templates with the handlebars runtime, which is smaller than the complete handlebars library. This is good, because it means smaller bundle files for you.
+
 
 
