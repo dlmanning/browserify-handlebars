@@ -5,8 +5,10 @@ var through = require('through');
 
 var filenamePattern = /\.(html|handlebars|hbs)$/;
 
+var ps = path.sep;
+
 var runtimePath = path.resolve(require.resolve('handlebars')
-                              ,'../../dist/cjs/handlebars.runtime');
+                              ,'..' + ps + '..' + ps + 'dist' + ps + 'cjs' + ps + 'handlebars.runtime');
 
 var wrap = function (template) {
   return 'var templater = require("' + runtimePath + '").default.template;' +
