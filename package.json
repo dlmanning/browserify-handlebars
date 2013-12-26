@@ -1,6 +1,6 @@
 {
   "name": "browserify-handlebars",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "browserify transform for handlebars template files",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,12 @@
   },
   "homepage": "https://github.com/dlmanning/browserify-handlebars",
   "dependencies": {
-    "handlebars": "~1.1.2",
     "through": "~2.3.4"
+  },
+  "devDependencies": {
+    "handlebars": "~1.2.0"
+  },
+  "peerDependencies": {
+    "handlebars": ">= 1.2.0 < 2"
   }
 }
