@@ -36,6 +36,22 @@ and run browserify with the transform option:
 
 That's all!
 
+#### Helpers:
+
+If you want to register [custom helpers](http://handlebarsjs.com/block_helpers.html) to the instance you'll need to require a instance of the handlebars runtime.
+
+```javascript
+var hbs = require('handlebars/runtime').default;
+
+hbs.registerHelper('fooEverything', function(txt) {
+    return 'Foo ' + txt;
+});
+
+var aTemplateFunction = require('./template.handlebars');
+
+```
+
+
 ## Implementation details
 
 This transform module packages the handlebars templates with the handlebars runtime, which is smaller than the complete handlebars library. This is good, because it means smaller bundle files for you.
