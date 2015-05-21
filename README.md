@@ -1,12 +1,12 @@
-#browserify-handlebars
+# browserify-handlebars
 
 A browserify transform for handlebar templates! Yay!
 
-###Installation:
+### Installation:
 
 `npm install browserify-handlebars`
 
-###Usage:
+### Usage:
 
 Make a handlebars template like so:
 
