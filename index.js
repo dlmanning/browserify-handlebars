@@ -13,7 +13,7 @@ module.exports = function (file, options) {
         options.filenamePattern = filenamePattern;
     }
 
-    var regexp = new RegExp(options.filnamePattern);
+    var regexp = new RegExp(options.filenamePattern);
     if (!regexp.test(file)) return through();
 
     var input = '';
